@@ -32,6 +32,11 @@
 
 // General structure
 
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
 .masthead .title, .page, .pagebottom, .chooseLocal {
     .container;
 }
@@ -87,7 +92,57 @@
 }
 
 
-// free-sw 
+
+// .frontpage
+
+.frontpage .title {
+    text-align: center;
+}
+
+body.frontpage, .frontpage #content, .frontpage .page {
+    min-height: 100%;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+
+
+    .whatIsFS, .whyFS, .actNow {
+        min-height: 700px;
+        width: 100%;
+
+        text-align: center;
+
+        p {
+            font-size: 1.3em;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 40em;
+            text-align: justify;
+        }
+    }
+
+    .whatIsFS {
+        // background-color: green;
+    }
+    .whyFS {
+        // background-color: blue;
+    }
+    .actNow {
+        // background-color: red;
+    }
+}
+
+.action {
+    .btn;
+    .btn-primary;
+    .btn-lg;
+    margin: 1em auto;
+    width: auto;
+}
+
+
+
+// .free-sw 
 
 
 .theFSD {
