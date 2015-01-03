@@ -32,7 +32,7 @@
 
 // General structure
 
-.masthead h2, .page, .pagebottom, .chooseLocal {
+.masthead .title, .page, .pagebottom, .chooseLocal {
     .container;
 }
 
@@ -82,26 +82,30 @@
     }
 }
 
+.lang-en p.beginWithQuote {
+    text-indent: -0.37em;
+}
 
-// Sections 
+
+// free-sw 
+
 
 .theFSD {
-    h3:first-child {
+    .theFSDefinition {
         margin-top: 0;
         margin-bottom: 0;
         font-size: 1em;
 
         & + aside {
             font-size: 0.8em;
-            width: 25%;
-            max-width: 30em;
-            min-width: 15em;
-            float: right;
             margin-left: 1.5em;
-            display: none;
 
             @media (min-width: @screen-md) {
                 display: block;
+                float: right;
+                width: 25%;
+                max-width: 30em;
+                min-width: 15em;
             }
             
             & + * {
@@ -140,10 +144,8 @@
 }
 
 
-.lang-en p.beginWithQuote {
-    text-indent: -0.37em;
-}
 
+// loading
 
 @icon-font-path:          "fonts/";
 @import "roboto.less";
