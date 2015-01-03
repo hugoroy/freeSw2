@@ -1,0 +1,9 @@
+Issue: the original page is published with a license not allowing modifications. I *assume* that the license refers to the full text of the article and not to all style elements from GNU.org -- this project is only an attempt to re-style the “What is Free Software?” page so that it could appeal to a broader audience.
+
+To deploy you need https://github.com/twbs/bootstrap/, for instance:
+
+   git submodule add https://github.com/twbs/bootstrap/ 
+
+To build, simply use Less:
+
+   lessc style.less -x style.min.css
