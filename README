@@ -7,3 +7,5 @@ To deploy you need https://github.com/twbs/bootstrap/, for instance:
 To build, simply use Less:
 
    lessc style.less -x style.min.css
+
+Note: I'm not a real web designer. If you're interested in doing this, please do it better :-)
