@@ -32,6 +32,14 @@
 
 // General structure
 
+.masthead h2, .page, .pagebottom, .chooseLocal {
+    .container;
+}
+
+.page section {
+    .make-row(12);
+}
+
 .actions {
     .skipTo {
         .sr-only;
@@ -45,6 +53,8 @@
 }
 
 .page {
+    p, ul, dl {
+    }
 }
 
 .pagebottom {
@@ -56,6 +66,19 @@
     .helpTranslate {
     }
     .listOfTranslations {
+        min-height: 600px;
+        background-image: url(assets/world_map.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-color: transparent;
+
+    }
+}
+
+#translations:target {
+    .listOfTranslations {
+        background-color: rgba(255, 255, 0, 0.33);
     }
 }
 
@@ -63,8 +86,27 @@
 // Sections 
 
 .theFSD {
-    aside {
-        &:first-child {
+    h3:first-child {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1em;
+
+        & + aside {
+            font-size: 0.8em;
+            width: 25%;
+            max-width: 30em;
+            min-width: 15em;
+            float: right;
+            margin-left: 1.5em;
+            display: none;
+
+            @media (min-width: @screen-md) {
+                display: block;
+            }
+            
+            & + * {
+                margin-top: 1.5em;
+            }
         }
     }
     .essentialFreedoms {
@@ -73,17 +115,34 @@
             }
         }
     }
+
+    p, ul {
+        max-width: 60em;
+        font-size: 1.3em;
+    }
 }
 
 
 .theRest {
+    padding-top: 4em;
+    padding-bottom: 4em;
 }
 
 .theLog {
+    font-size: 80%;
+    padding-top: 4em;
+    padding-bottom: 2em;
+
+    h3 {
+        margin: 0;
+        font-size: 1em;
+    }
 }
 
 
-
+.lang-en p.beginWithQuote {
+    text-indent: -0.37em;
+}
 
 
 @icon-font-path:          "fonts/";
